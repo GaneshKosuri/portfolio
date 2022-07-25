@@ -19,9 +19,9 @@ function Main() {
             <Experience />
             <Projects />
             <Achievement />
-            <Services />
+            {/* <Services />
             <Testimonials />
-            <Blog />
+            <Blog /> */}
             <Contacts />
             <Footer />
         </div>

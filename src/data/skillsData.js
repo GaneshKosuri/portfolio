@@ -7,7 +7,6 @@
     'TypeScript',
     'React',
     'Figma',
-    'Zeplin',
     'Python',
     'C',
     'Graphql'

@@ -2,14 +2,14 @@ export const educationData = [
     {
         id: 1,
         institution: 'Ragiv Gandhi University of Knowledge Technologies',
-        course: 'Bachelor of Technology',
+        course: 'Bachelor of Technology in Computer Science',
         startYear: '2017',
-        endYear: '2019'
+        endYear: '2021'
     },
     {
         id: 2,
         institution: 'Ragiv Gandhi University of Knowledge Technologies',
-        course: 'PUC',
+        course: 'Pre-University Course (PUC)',
         startYear: '2015',
         endYear: '2017'
     },
