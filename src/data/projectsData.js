@@ -12,19 +12,19 @@ export const projectsData = [
     {
         id: 1,
         projectName: 'Movies App',
-        projectDesc: 'This project aims to build an employee management system that consolidates all information of a company',
-        tags: ['React', 'CSS', 'Material Ui'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        projectDesc: 'This is a clone for Netflix Platform, in which users can see the movies dashboard based on their interests.',
+        tags: ['React', 'TypeScript', 'Styled-Components'],
+        code: 'https://github.com/',
+        demo: 'https://github.com/',
         image: one
     },
     {
         id: 2,
-        projectName: 'Netflix Clone',
-        projectDesc: 'This project is a railway tracking system that allows users to obtain relevant information about train timing.',
-        tags: ['Django', 'Tailwind CSS'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        projectName: 'Spotify Remix',
+        projectDesc: 'This is a Clone for Spotify App, In this application user can listen to their favourite songs, create Playlists and Many More...',
+        tags: ['React', 'CSS','Material Ui'],
+        code: 'https://github.com/',
+        demo: 'https://github.com/',
         image: two
     },
     {
@@ -32,8 +32,8 @@ export const projectsData = [
         projectName: 'Book Hub',
         projectDesc: 'Weather forecast systems and applications predict weather conditions based on multiple parameters.',
         tags: ['Django', 'CSS', 'Material Ui'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        code: 'https://github.com/',
+        demo: 'https://github.com/',
         image: three
     }
 ]

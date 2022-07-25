@@ -5,7 +5,7 @@ import { IoMenuSharp, IoHomeSharp } from 'react-icons/io5';
 import { HiDocumentText } from 'react-icons/hi';
 import { BsFillGearFill } from 'react-icons/bs';
 import { MdPhone } from 'react-icons/md';
-import { FaUser, FaUserGraduate,FaRProject } from 'react-icons/fa';
+import { FaUser, FaUserGraduate,FaRProject, FaTasks } from 'react-icons/fa';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
@@ -88,7 +88,7 @@ function Navbar() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-evenly',
-            padding: '0 30px',
+            padding: '0 25px',
             boxSizing: 'border-box',
             border: '2px solid',
             borderColor: theme.primary,
@@ -99,13 +99,14 @@ function Navbar() {
             },
             [t.breakpoints.down('sm')]: {
                 width: '100%',
-                padding: '0 25px',
+                padding: '0 20px',
                 height: '55px',
             },
         },
         drawerLinks: {
             fontFamily: 'var(--primaryFont)',
-            width: '50%',
+            width: '100%',
+            paddingLeft: '8px',
             fontSize: '1.3rem',
             fontWeight: 600,
             [t.breakpoints.down('sm')]: {
@@ -134,7 +135,7 @@ function Navbar() {
         <div className='navbar'>
             <div className='navbar--container'>
                 <h1 style={{ color: theme.secondary }}>
-                    {shortname(headerData.name)}
+                    {headerData.name}
                 </h1>
 
                 <IoMenuSharp
@@ -231,24 +232,6 @@ function Navbar() {
 
                         <Fade left>
                             <NavLink
-                                to='/#projects'
-                                smooth={true}
-                                spy='true'
-                                duration={2000}
-                            >
-                                <div className={classes.drawerItem}>
-                                    <FaRProject
-                                        className={classes.drawerIcon}
-                                    />
-                                    <span className={classes.drawerLinks}>
-                                        Projects
-                                    </span>
-                                </div>
-                            </NavLink>
-                        </Fade>
-
-                        <Fade left>
-                            <NavLink
                                 to='/#experience'
                                 smooth={true}
                                 spy='true'
@@ -265,11 +248,27 @@ function Navbar() {
                             </NavLink>
                         </Fade>
 
-                       
+                        <Fade left>
+                            <NavLink
+                                to='/#projects'
+                                smooth={true}
+                                spy='true'
+                                duration={2000}
+                            >
+                                <div className={classes.drawerItem}>
+                                    <FaTasks
+                                        className={classes.drawerIcon}
+                                    />
+                                    <span className={classes.drawerLinks}>
+                                        Projects
+                                    </span>
+                                </div>
+                            </NavLink>
+                        </Fade>                       
 
                         <Fade left>
                             <NavLink
-                                to='/#contacts'
+                                to='/#contactMe'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
@@ -277,7 +276,7 @@ function Navbar() {
                                 <div className={classes.drawerItem}>
                                     <MdPhone className={classes.drawerIcon} />
                                     <span className={classes.drawerLinks}>
-                                        Contact
+                                        Contact Me
                                     </span>
                                 </div>
                             </NavLink>

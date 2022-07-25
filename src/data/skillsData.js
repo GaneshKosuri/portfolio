@@ -9,6 +9,7 @@
     'Figma',
     'Python',
     'C',
+    'MySQL',
     'Graphql'
 ]
 

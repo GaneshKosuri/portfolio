@@ -134,13 +134,13 @@ function Contacts() {
 
         if (name && email && message) {
             if (isEmail(email)) {
-                const responseData = {
+                const requestObject = {
                     name: name,
                     email: email,
-                    message: message,
+                    body: message,
                 };
 
-                axios.post(contactsData.sheetAPI, responseData).then((res) => {
+                axios.post('https://contact-me-form-backend.herokuapp.com/send-mail', requestObject).then((res) => {
                     setSuccess(true);
                     setErrMsg('');
 
@@ -162,11 +162,11 @@ function Contacts() {
     return (
         <div
             className='contacts'
-            id='contacts'
+            id='contactMe'
             style={{ backgroundColor: theme.secondary }}
         >
             <div className='contacts--container'>
-                <h1 style={{ color: theme.primary }}>Contacts</h1>
+                <h1 style={{ color: theme.primary }}>Contact Me</h1>
                 <div className='contacts-body'>
                     <div className='contacts-form'>
                         <form onSubmit={handleContactForm}>
