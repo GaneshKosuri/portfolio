@@ -1,5 +1,5 @@
 export const achievementData = {
-    bio : "Realize your dreams and biggest goals by developing the psychology of a winner.",
+    bio : "I strongly believe that we realize our dreams and biggest goals by developing the psychology of a winner.",
     achievements : [
         {
             id : 1,

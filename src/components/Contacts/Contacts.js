@@ -3,6 +3,7 @@ import { Snackbar, IconButton, SnackbarContent } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
 import axios from 'axios';
 import isEmail from 'validator/lib/isEmail';
+import {Oval} from "react-loader-spinner"
 import { makeStyles } from '@material-ui/core/styles';
 import {
     FaTwitter,
@@ -36,6 +37,7 @@ function Contacts() {
 
     const [success, setSuccess] = useState(false);
     const [errMsg, setErrMsg] = useState('');
+    const [isLoading,setIsLoading] = useState(false)
 
     const { theme } = useContext(ThemeContext);
 
@@ -129,6 +131,13 @@ function Contacts() {
 
     const classes = useStyles();
 
+    const closeErrorMessagePopUp = () => {
+        setTimeout(()=>{
+            setErrMsg('');
+            setOpen(false);
+        },2000)
+    }
+
     const handleContactForm = (e) => {
         e.preventDefault();
 
@@ -140,22 +149,30 @@ function Contacts() {
                     body: message,
                 };
 
+                setIsLoading(true)
+
                 axios.post('https://contact-me-form-backend.herokuapp.com/send-mail', requestObject).then((res) => {
                     setSuccess(true);
-                    setErrMsg('');
+                    setIsLoading(false)
 
                     setName('');
                     setEmail('');
                     setMessage('');
-                    setOpen(false);
+
+                    setErrMsg('Your request is successfully added');
+                    setOpen(true);
+
+                    closeErrorMessagePopUp()
                 });
             } else {
                 setErrMsg('Invalid email');
                 setOpen(true);
+                closeErrorMessagePopUp()
             }
         } else {
             setErrMsg('Enter all the fields');
             setOpen(true);
+            closeErrorMessagePopUp()
         }
     };
 
@@ -216,12 +233,13 @@ function Contacts() {
                                 />
                             </div>
 
-                            <div className='submit-btn'>
+                            <div className={`submit-btn ${isLoading ? 'disabled-btn':''}`}>
                                 <button
                                     type='submit'
                                     className={classes.submitBtn}
+                                    disabled={isLoading}
                                 >
-                                    <p>{!success ? 'Send' : 'Sent'}</p>
+                                    {isLoading ? <Oval color="#00BFFF" height={32} width={32} radius={200} /> : <p>{!success ? 'Send' : 'Sent'}</p>}
                                     <div className='submit-icon'>
                                         <AiOutlineSend
                                             className='send-icon'
