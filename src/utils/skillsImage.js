@@ -11,6 +11,7 @@ import javascript from '../assets/svg/skills/javascript.svg'
 import nextJS from '../assets/svg/skills/nextJS.svg'
 import nuxtJS from '../assets/svg/skills/nuxtJS.svg'
 import react from '../assets/svg/skills/react.svg'
+import redux from "../assets/svg/skills/redux.svg"
 import svelte from '../assets/svg/skills/svelte.svg'
 import typescript from '../assets/svg/skills/typescript.svg'
 import vue from '../assets/svg/skills/vue.svg'
@@ -105,6 +106,8 @@ export const skillsImage = (skill) => {
             return nuxtJS;
         case 'react':
             return react;
+        case 'redux':
+            return redux;
         case 'svelte':
             return svelte;
         case 'typescript':

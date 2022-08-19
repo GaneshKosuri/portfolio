@@ -1,6 +1,9 @@
 import one from '../assets/svg/projects/one.svg'
 import two from '../assets/svg/projects/two.svg'
 import three from '../assets/svg/projects/three.svg'
+import jobbyApp from "../assets/png/projects/jobbyApp.png"
+import games from "../assets/png/projects/games.png"
+
 // import four from '../assets/svg/projects/four.svg'
 // import five from '../assets/svg/projects/five.svg'
 // import six from '../assets/svg/projects/six.svg'
@@ -11,30 +14,30 @@ import three from '../assets/svg/projects/three.svg'
 export const projectsData = [
     {
         id: 1,
-        projectName: 'Movies App',
-        projectDesc: 'This is a clone for Netflix Platform, in which users can see the movies dashboard based on their interests.',
-        tags: ['React', 'TypeScript', 'Styled-Components'],
-        code: 'https://github.com/',
-        demo: 'https://github.com/',
-        image: one
+        projectName: 'Jobs App',
+        projectDesc: 'A responsive website similar to Job platforms like Noukari, Angel, Indeed. built using NxtWave CCBP APIs.',
+        tags: ['React', 'CSS', 'JavaScript','HTML'],
+        code: 'https://github.com/GaneshKosuri/jobsApp',
+        demo: 'https://jobs-app-topaz.vercel.app/login',
+        image: jobbyApp
     },
     {
         id: 2,
-        projectName: 'Spotify Remix',
-        projectDesc: 'This is a Clone for Spotify App, In this application user can listen to their favourite songs, create Playlists and Many More...',
-        tags: ['React', 'CSS','Material Ui'],
-        code: 'https://github.com/',
-        demo: 'https://github.com/',
-        image: two
+        projectName: 'Emoji Game',
+        projectDesc: 'A Simple Responsive Game using Emojis, Clicking all the emojis only once wins the Game.',
+        tags: ['React', 'CSS', 'JavaScript','HTML'],
+        code: 'https://github.com/GaneshKosuri/emojisFinder',
+        demo: 'https://emoji-game-one.vercel.app/',
+        image: games
     },
     {
         id: 3,
-        projectName: 'Book Hub',
-        projectDesc: 'Weather forecast systems and applications predict weather conditions based on multiple parameters.',
-        tags: ['Django', 'CSS', 'Material Ui'],
-        code: 'https://github.com/',
-        demo: 'https://github.com/',
-        image: three
+        projectName: 'Rock Paper Scissors Game',
+        projectDesc: 'A Simple Responsive Game which resembles Rock Paper Scissors, you will get +1 or -1 when you win / lose the game.',
+        tags: ['React', 'CSS', 'JavaScript','HTML'],
+        code: 'https://github.com/GaneshKosuri/rockPaperScissors',
+        demo: 'https://rock-paper-scissors-lake-nu.vercel.app/',
+        image: games
     }
 ]
 
