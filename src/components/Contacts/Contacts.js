@@ -3,7 +3,7 @@ import { Snackbar, IconButton, SnackbarContent } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
 import axios from 'axios';
 import isEmail from 'validator/lib/isEmail';
-import {Oval} from "react-loader-spinner"
+import { Oval } from "react-loader-spinner"
 import { makeStyles } from '@material-ui/core/styles';
 import {
     FaTwitter,
@@ -37,7 +37,7 @@ function Contacts() {
 
     const [success, setSuccess] = useState(false);
     const [errMsg, setErrMsg] = useState('');
-    const [isLoading,setIsLoading] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
 
     const { theme } = useContext(ThemeContext);
 
@@ -132,10 +132,10 @@ function Contacts() {
     const classes = useStyles();
 
     const closeErrorMessagePopUp = () => {
-        setTimeout(()=>{
+        setTimeout(() => {
             setErrMsg('');
             setOpen(false);
-        },2000)
+        }, 2000)
     }
 
     const handleContactForm = (e) => {
@@ -153,7 +153,6 @@ function Contacts() {
 
                 axios.post('https://contact-me-form-backend.herokuapp.com/send-mail', requestObject).then((res) => {
                     setSuccess(true);
-                    setIsLoading(false)
 
                     setName('');
                     setEmail('');
@@ -163,7 +162,13 @@ function Contacts() {
                     setOpen(true);
 
                     closeErrorMessagePopUp()
-                });
+                }).catch(_ => {
+                    setErrMsg('Something went wrong in the server, Try again later.');
+                    setOpen(true);
+                    closeErrorMessagePopUp()
+                }).finally(() => {
+                    setIsLoading(false)
+                })
             } else {
                 setErrMsg('Invalid email');
                 setOpen(true);
@@ -233,7 +238,7 @@ function Contacts() {
                                 />
                             </div>
 
-                            <div className={`submit-btn ${isLoading ? 'disabled-btn':''}`}>
+                            <div className={`submit-btn ${isLoading ? 'disabled-btn' : ''}`}>
                                 <button
                                     type='submit'
                                     className={classes.submitBtn}
@@ -267,7 +272,7 @@ function Contacts() {
                         </form>
                         <Snackbar
                             anchorOrigin={{
-                                vertical: 'top',
+                                vertical: 'bottom',
                                 horizontal: 'center',
                             }}
                             open={open}
