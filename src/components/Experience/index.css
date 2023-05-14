@@ -40,7 +40,14 @@
 }
 
 .vertical-timeline-element-subtitle {
+  font-size: 0.7rem !important;
   color: var(--color-button-hover);
+}
+
+@media only screen and (min-width: 1024px) {
+  .vertical-timeline-element-subtitle {
+    font-size: 1rem !important;
+  }
 }
 
 .vertical-timeline-element-image {

@@ -80,7 +80,7 @@ body {
 }
 
 a {
-  color: var(--color-white);
+  color: var(--color-white) !important;
   text-decoration: none !important;
 }
 img {
