@@ -34,7 +34,7 @@
     "postinstall": "npm run build"
   },
   "engines": {
-    "node": "16.14.0",
+    "node": "16.20.0",
     "npm": "8.5.0"
   },
   "eslintConfig": {
