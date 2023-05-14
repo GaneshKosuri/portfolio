@@ -1,32 +1,48 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { useEffect } from 'react'
+import { BrowserRouter } from "react-router-dom";
 
-// import { ThemeContext } from './contexts/ThemeContext';
-import { Main } from './pages'
-import { BackToTop } from './components'
-import ScrollToTop from './utils/ScrollToTop'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-import './App.css'
+import AboutMe from "./components/AboutMe/AboutMe";
+import Footer from "./components/Footer/Footer";
+import Home from "./components/Home";
+import Projects from "./components/Projects/projects";
+import Navbar from "./components/Navbar/Navbar";
+import Progress from "./components/SkillBars/progress";
+import ContactMe from "./components/ContactMe/ContactMe";
+import Achievements from "./components/Achievements";
+import Experience from './components/Experience';
+
+
+import "./App.css";
 
 function App() {
 
-  // const { theme } = useContext(ThemeContext);
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      once: true,
+    });
+  }, []);
 
   return (
-    <div className="app">
-      <Router>
-        <ScrollToTop/>
-        <Switch>
-          <Route path="/" exact component={Main} />
-          {/* <Route path="/blog" exact component={BlogPage} /> */}
-          {/* <Route path="/projects" exact component={ProjectPage} /> */}
-          <Route path="/error" component={()=><h1>Sorry for inconvenience</h1>} />
+    <>
+      <BrowserRouter>
 
-          <Redirect to="/error"  />
-        </Switch>
-      </Router>
-      <BackToTop />
-    </div>
+        <div className="homepage">
+          <Navbar />
+          <Home />
+        </div>
+        <AboutMe />
+        <Progress />
+        <Experience />
+        <Projects />
+        <Achievements />
+        <ContactMe />
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 

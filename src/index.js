@@ -1,20 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import ThemeContextProvider from './contexts/ThemeContext'
+import React from "react";
+import ReactDOM from "react-dom";
 
+import App from "./App";
 
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import "./index.css";
 
 ReactDOM.render(
-    <ThemeContextProvider>
-      <App />
-    </ThemeContextProvider>,
-  document.getElementById('root')
+  <App />,
+  document.getElementById("root")
 );
-
-
-reportWebVitals();
