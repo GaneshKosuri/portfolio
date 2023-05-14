@@ -43,7 +43,7 @@ const Navbar = () => {
                     <a href="#projects">Projects</a>
                   </li>
                   <li data-aos="fade-down" data-aos-duration="1500">
-                    <a href="#achievements">Achiements</a>
+                    <a href="#achievements">Achievements</a>
                   </li>
                   <li data-aos="fade-down" data-aos-duration="1800">
                     <a href="#contact">Contact</a>
