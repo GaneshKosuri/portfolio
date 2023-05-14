@@ -10,7 +10,7 @@ import jobsApp from "../../images/projects/jobs-app.png";
 import rockPaperScissorGame from "../../images/projects/rock-paper-scissor.png";
 import portfolio from "../../images/projects/portfolio.png";
 
-import "./projects.css";
+import "./index.css";
 
 const Projects = () => {
   const options = {
