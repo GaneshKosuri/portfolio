@@ -49,6 +49,12 @@ export const skillsData = [
         "exp_level": "Intermediate"
     },
     {
+        "id": 12,
+        "icon": "https://img.icons8.com/?size=512&id=54087&format=png",
+        "lang_name": "Node",
+        "exp_level": "Experienced"
+    },
+    {
         "id": 5,
         "icon": "https://img.icons8.com/?size=512&id=eETV3RNHVrWA&format=png",
         "lang_name": "Vue",

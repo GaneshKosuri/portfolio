@@ -44,7 +44,7 @@ export const experienceData = {
             course: 'Bachelor\'s degree in Computer Science',
             date: '2017 - 2021',
             description: 'I have selected the CSE branch as a major for my academic pursuit and obtained an impressive 8.9 CGPA score.',
-            icon: 'https://img.icons8.com/?size=512&id=38833&format=png',
+            icon: 'https://img.icons8.com/?size=512&id=PJleCo3so0R2&format=png',
             percentage: '90'
         },
         {
@@ -53,7 +53,7 @@ export const experienceData = {
             course: 'Pre-University Course (PUC)',
             date: '2015 - 2017',
             description: 'It\'s 2 years course which equals to 11th and 12th standard. Secured an aggregate of 8.6 CGPA',
-            icon: 'https://img.icons8.com/?size=512&id=38833&format=png',
+            icon: 'https://img.icons8.com/?size=512&id=PJleCo3so0R2&format=png',
             percentage: '86'
         },
         {
@@ -62,7 +62,7 @@ export const experienceData = {
             course: 'Seconday Education',
             date: '2015',
             description: 'Achieved 97% in government school, demonstrating academic excellence and a strong work ethic',
-            icon: 'https://img.icons8.com/?size=512&id=38833&format=png',
+            icon: 'https://img.icons8.com/?size=512&id=PJleCo3so0R2&format=png',
             percentage: '97'
         },
     ]
@@ -86,7 +86,7 @@ export const experienceStyles = {
         borderRight: "7px solid #677483"
     },
     iconLight: {
-        background: "#677483",
+        background: "#dce1eb",
         color: "#fff",
         display: "flex",
         justifyContent: "center",

@@ -20,7 +20,7 @@ export const homeContactDetails = [
     {
         "id": 4,
         "name": 'WhatsApp',
-        "link": "https://wa.me/8074866089?text=Hi",
+        "link": "https://wa.me/+918074866089?text=Hi",
         "social_icon": "bx bxl-whatsapp"
     },
     {
