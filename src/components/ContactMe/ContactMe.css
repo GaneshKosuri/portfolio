@@ -131,6 +131,16 @@
   background: #ddd6fa;
 }
 
+.form-submit {
+  background: var(--color-light);
+}
+
+.disabled-btn {
+  background: var(--color-light);
+  cursor: not-allowed;
+  color: var(--color-info-dark);
+}
+
 @media only screen and (max-width: 689px) {
   .reachme-title .row {
     justify-content: center;

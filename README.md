@@ -180,6 +180,8 @@ npm start
 | react-vertical-timeline-component |
 |        react-owl-carousel         |
 |              emailjs              |
+|       react-loader-spinner        |
+|          react-toastify           |
 
 <br />
 
