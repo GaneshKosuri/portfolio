@@ -3,7 +3,7 @@ export const experienceData = {
         {
             id: 1,
             company: 'V2Solutions',
-            companyLogo: 'https://www.v2solutions.com/images/v-2-logo.svg',
+            companyLogo: 'https://www.v2solutions.com/wp-content/uploads/2024/02/V2-logo.svg',
             jobtitle: 'Senior Software Engineer',
             description: "Contributed to the HROne team by designing and developing UI components with VueJs.",
             date: 'Sept 2022 - Present',
