@@ -11,7 +11,6 @@ module.exports = {
         'plugin:import/errors',
         'plugin:import/warnings',
         'plugin:import/typescript',
-        'plugin:prettier/recommended', // Enables eslint-plugin-prettier and eslint-config-prettier.
     ],
     parserOptions: {
         ecmaFeatures: {
@@ -25,12 +24,10 @@ module.exports = {
         'react-hooks',
         'jsx-a11y',
         'import',
-        'prettier', // Runs Prettier as an ESLint rule and reports differences as individual ESLint issues.
     ],
     rules: {
         'react/react-in-jsx-scope': 'off', // React 17 no longer requires React to be in scope.
         'no-unused-vars': 'warn', // Change this to 'error' if you want to enforce it more strictly.
-        'prettier/prettier': 'warn', // Runs Prettier as an ESLint rule and reports differences as individual ESLint issues.
         'react/prop-types': 'off', // Disable prop-types as we use TypeScript for type checking.
         'react/jsx-uses-react': 'off', // React 17 no longer requires React to be in scope.
         'react/jsx-uses-vars': 'warn', // Prevent variables used in JSX to be incorrectly marked as unused.

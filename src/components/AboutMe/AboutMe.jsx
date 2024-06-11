@@ -44,7 +44,7 @@ const AboutMe = () => {
                     <h3>{details.title_2}</h3>
                   </div>
                   <div className="about-description">
-                    <div id="foo" unselectable="on" className="unselectable">
+                    <div id="foo" className="unselectable">
                       <div
                         dangerouslySetInnerHTML={{
                           __html: `${details.description_one}`,

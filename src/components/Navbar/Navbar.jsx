@@ -52,8 +52,8 @@ const Navbar = () => {
               </nav>
               <div className="left-btns">
                 <div className=" " id="theme-button">
-                  <Link to="#" class="menuBtn">
-                    <span class="lines"></span>
+                  <Link to="#" className="menuBtn">
+                    <span className="lines"></span>
                   </Link>
                 </div>
               </div>
