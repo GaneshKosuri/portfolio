@@ -1,15 +1,12 @@
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { ColorRing } from "react-loader-spinner";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-import emailjs from "@emailjs/browser";
-
+import { sendForm } from "@emailjs/browser";
 import "./ContactMe.css";
-
 import { contactDetails } from "../../data/contacts";
 
-const ContactMe = (e) => {
+const ContactMe = () => {
   const form = useRef();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -43,24 +40,22 @@ const ContactMe = (e) => {
   const sendEmail = (e) => {
     e.preventDefault();
     setIsFormSubmitting(true);
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        form.current,
-        process.env.REACT_APP_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          resetData();
-          setIsFormSubmitting(false);
-          toast.success("Email sent successfully!");
-        },
-        (error) => {
-          toast.error("Error sending email, please try again later!");
-          setIsFormSubmitting(false);
-        }
-      );
+    sendForm(
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
+      form.current,
+      process.env.REACT_APP_PUBLIC_KEY
+    ).then(
+      () => {
+        resetData();
+        setIsFormSubmitting(false);
+        toast.success("Email sent successfully!");
+      },
+      () => {
+        toast.error("Error sending email, please try again later!");
+        setIsFormSubmitting(false);
+      }
+    );
     e.target.reset();
   };
 

@@ -1,9 +1,7 @@
 import { useEffect } from 'react'
 import { BrowserRouter } from "react-router-dom";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 import AboutMe from "./components/AboutMe/AboutMe";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home";

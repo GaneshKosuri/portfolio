@@ -1,9 +1,7 @@
 import decor3 from "../../images/decoration/Group-31.png";
 import { homeDetails } from "../../data/home";
 import { homeContactDetails } from "../../data/links";
-
 import profile from "../../images/profile.jpg";
-
 import "./index.css";
 
 const Intro = () => {

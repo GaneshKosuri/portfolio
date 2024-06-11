@@ -3,14 +3,10 @@ import reactagle from "../../images/decoration/Rectangle-7.png";
 import shady from "../../images/decoration/dots.png";
 import { aboutMeData } from "../../data/aboutMe";
 import AboutSvg from "./AboutSvg";
-
 import "./AboutMe.css";
-
 import resume from "../../pdf/resume.pdf";
 
 const AboutMe = () => {
-  const img_300 = "https://drive.google.com/uc?id=";
-
   return (
     <>
       {aboutMeData &&

@@ -1,10 +1,7 @@
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-
 import $ from "jquery";
-
 import "./progress.css";
-
 import { skillsData } from "../../data/skills";
 
 var nav = $("body");

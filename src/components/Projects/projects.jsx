@@ -1,15 +1,11 @@
-import React from "react";
-
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-
 import { projectsData } from "../../data/projects";
 import emojiGame from "../../images/projects/emoji-game.png";
 import jobsApp from "../../images/projects/jobs-app.png";
 import rockPaperScissorGame from "../../images/projects/rock-paper-scissor.png";
 import portfolio from "../../images/projects/portfolio.png";
-
 import "./index.css";
 
 const Projects = () => {
