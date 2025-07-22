@@ -9,7 +9,7 @@ const Achievements = () => {
         <div className="service-container">
           <div className="service-title">
             <h2>My Achievements so far</h2>
-            <h3>Achievements</h3>
+            <h3>Achievements / Certifications</h3>
           </div>
 
           <div className="service-row">
